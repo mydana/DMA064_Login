@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login!" id="BYZ-38-t0r" customClass="ViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,32 +79,35 @@
                             <constraint firstItem="fj0-NG-Mug" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r62-XV-WfZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Y5B-S4-SQ4"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Y5B-S4-SQ4"/>
+                    <connections>
+                        <outlet property="usernameText" destination="qV2-CH-r46" id="f4T-vx-3nQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing Screen-->
         <scene sceneID="SOn-Ax-OY5">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="GQN-AP-3QI" sceneMemberID="viewController">
+                <viewController title="Landing Screen" modalPresentationStyle="fullScreen" id="GQN-AP-3QI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nc5-tO-4Qm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="SeY-NE-9zN"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="f4a-Jk-vFc"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="f4a-Jk-vFc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ya-qE-BsT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1712" y="4"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Hello!-->
         <scene sceneID="yLP-eb-sC5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gPn-Mw-asN" sceneMemberID="viewController">
+                <navigationController title="Hello!" automaticallyAdjustsScrollViewInsets="NO" id="gPn-Mw-asN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q3O-Sc-lTw">
                         <rect key="frame" x="0.0" y="118" width="393" height="44"/>
