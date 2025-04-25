@@ -40,7 +40,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Login"/>
                                         <connections>
-                                            <segue destination="GQN-AP-3QI" kind="show" id="3tH-vg-8s6"/>
+                                            <segue destination="GQN-AP-3QI" kind="show" identifier="Login" id="3tH-vg-8s6"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8c-O9-J6E">
@@ -50,11 +50,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="162.33333333333334" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot username?"/>
+                                                <connections>
+                                                    <action selector="forgotUserNameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qeN-ka-6i7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGM-ar-9sf">
                                                 <rect key="frame" x="162.33333333333331" y="0.0" width="162.33333333333331" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot password?"/>
+                                                <connections>
+                                                    <action selector="forgotPasswordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thv-Ll-puS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -81,7 +87,10 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Y5B-S4-SQ4"/>
                     <connections>
+                        <outlet property="forgotPasswordButton" destination="CGM-ar-9sf" id="OnB-PE-Clh"/>
+                        <outlet property="forgotUserNameButton" destination="cXQ-vO-P4l" id="QFf-g1-dKs"/>
                         <outlet property="usernameText" destination="qV2-CH-r46" id="f4T-vx-3nQ"/>
+                        <segue destination="GQN-AP-3QI" kind="show" identifier="Forgot" id="uKr-Ub-h7F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -123,6 +132,9 @@
             <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3tH-vg-8s6"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
